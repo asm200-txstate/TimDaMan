@@ -1,0 +1,44 @@
+
+.titlebox
+{
+    place-items: center;
+}
+.gobutton
+{
+    align-items: center;
+    background-image: linear-gradient(144deg,#9010ec, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+
+}
+.gobutton:hover {
+    color: #28a745;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+.header{
+    text-align: center;
+}
+
+.css-164r41r {
+    padding-bottom: 20rem;
+}
+.header {
+    padding: 5rem;
+}

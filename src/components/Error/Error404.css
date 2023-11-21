@@ -1,0 +1,25 @@
+.screen-format{
+    text-align: center;
+}
+
+.image-style{
+    box-shadow: 5px 5px 28px;
+    height: 600px;
+}
+
+.rotate-meme{
+    animation: rotate-meme 8s linear infinite; 
+
+    border: 3px solid rgb(17, 0, 254);
+    padding: 20px;
+    font-size: 42px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 32px;
+    width: 15%;
+}
+
+@keyframes rotate-meme{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

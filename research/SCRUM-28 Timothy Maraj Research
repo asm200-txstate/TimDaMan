@@ -1,0 +1,85 @@
+
+# Research
+
+---
+
+1. **Title or name of research/training**
+   - User Authentication Basics with Python
+
+2. **Why you are doing it.**
+   - With the increasing importance of security in our projects, understanding user authentication is vital. It's the foundation of ensuring only authorized individuals have access to certain resources or data. 
+
+3. **What you expect to learn/do. Be specific by identifying what code/modules will be affected by the research/training.**
+   - I aim to gain a deep understanding of user authentication mechanisms, particularly using username/password combinations. I'll explore Python libraries that handle such tasks. The modules that will be impacted by this training include the `UserManagement` and `LoginModule` modules of our project.
+
+4. **What do you expect to do with it, including any code you expect to write. Be specific.**
+   - Post-research, I plan to implement a secure login system for our application. I'll be writing the `UserAuth` class, which will handle user authentication, including verifying credentials, hashing passwords, and managing user sessions.
+
+5. **What task(s) in Jira represent the work you will do that was/is dependent on the research/training.**
+   - The Jira tasks related to this research include:
+     - `AUTH-101`: Implement secure password hashing.
+     - `AUTH-102`: Design the login interface and link it to the backend.
+     - `AUTH-103`: Integration of `UserAuth` class with existing user management system.
+
+---
+
+## Research for Sprint One
+
+1. **Flask-Login**:
+   - This is one of the most popular Flask extensions for user session management. It handles the user sessions after they log in. However, it doesn't manage the authentication part (i.e., verifying username and password against a database).
+   - [Flask-Login Documentation](https://flask-login.readthedocs.io/en/latest/)
+
+2. **Flask-Security**:
+   - It's a comprehensive package that integrates Flask-Login, Flask-Mail, Flask-WTF, and Flask-Principal. It provides features such as password hashing, session-based authentication, and role-based access control.
+   - [Flask-Security Documentation](https://pythonhosted.org/Flask-Security/)
+
+3. **Flask-User**:
+   - Flask-User offers a customizable user management system for Flask, including user authentication (email/password, OAuth), account management, and more.
+   - [Flask-User Documentation](https://flask-user.readthedocs.io/en/latest/)
+
+4. **Flask-OAuthlib**:
+   - If you're looking to implement OAuth-based authentication, Flask-OAuthlib is the go-to library. This way, you can authenticate users through third-party services like Google, Facebook, and Twitter.
+   - [Flask-OAuthlib Documentation](https://flask-oauthlib.readthedocs.io/en/latest/)
+
+5. **Flask-Bcrypt**:
+   - While not an authentication system by itself, Flask-Bcrypt is essential for securely hashing passwords. Before saving a password in a database or verifying a user's password, it's recommended to use a hashing library like Bcrypt.
+   - [Flask-Bcrypt Documentation](https://flask-bcrypt.readthedocs.io/en/latest/)
+
+6. **Flask-WTF**:
+   - Flask-WTF isn't strictly an authentication library, but it provides tools to create and validate web forms, which you'll often use for login and registration forms.
+   - [Flask-WTF Documentation](https://flask-wtf.readthedocs.io/en/stable/)
+
+## Research Week of Sept 25 - Oct 1st:
+
+1. [What is the difference between User Authorization and Authentication:](https://learn.microsoft.com/en-us/azure/active-directory/develop/authentication-vs-authorization)
+   - `Authorization:`
+   <p> 
+   Granting a party (User, Company, Goverment Agency etc) the right to do part take in an act. A good example of this is a student swiping into a restricted lab enviorment and being able to interact with the restricted items/data in the space. They are authorized to access the lab by someone with higher priviledges. 
+    More formally "It specifies what data you're allowed to access and what you can do with that data"
+    </p>
+
+   - `Authentication:`
+   <p> 
+   Is verifying if a party is who they say they are. This is usally done in one of few ways: In the case of SSH public keys are used to encrypt messages to but only those who have a private key associated with that encryption style are able to read the message. The private key is the method used to authenticate that you are the individual/device that should receive the message. Another way is via `Security Tokens`. These tokens are generated for a specific user and are passed to the application to verify your identity. However, if someone else like a bad actor gets a hold of this key...then they can utilize it as well.
+   </p>
+
+   - More Common Forms:
+      - Password Based Auth
+      - Certificate Based
+      - Token Based
+
+---
+
+---
+
+## Other Notes
+
+- Start with password Auth then create a token via their password and username combined salt it and then generate this token for them.
+
+--- 
+
+## Sources
+
+- [Okta Authentication vs. Authorization](https://www.okta.com/identity-101/authentication-vs-authorization/)
+
+``

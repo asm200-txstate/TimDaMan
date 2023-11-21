@@ -1,0 +1,111 @@
+.question-entry{
+    text-align: center;
+    background-color: rgb(80, 0, 111);
+    padding: 16px;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 24px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 8px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 38px;
+}
+
+h3{
+    font-size: 56px;
+}
+
+.option{
+    background-color: rgb(0, 110, 255);
+    padding: 20px;
+    border: 3px solid rgb(131, 0, 254);
+    font-size: 42px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 32px;
+    width: 80%;
+    
+    color: white;
+}
+
+.restart-button{
+    background-color: rgb(0, 110, 255);
+    padding: 20px;
+    border: 3px solid rgb(131, 0, 254);
+    font-size: 30px;
+    margin-top: 8px;
+    border-radius: 16px;
+    width: 50%;
+
+    color: white;
+}
+
+.start-button{
+    background-color: rgb(0, 110, 255);
+    padding: 20px;
+    border: 3px solid rgb(131, 0, 254);
+    font-size: 30px;
+    margin-top: 8px;
+    border-radius: 16px;
+    width: 50%;
+
+    color: white;
+}
+
+.option:hover,
+.restart-button:hover,
+.start-button:hover {
+    background-color: rgb(165, 42, 161); /* Change background color on hover */
+    color: white; /* Change text color on hover (if needed) */
+    cursor: pointer; /* Change cursor to a pointer on hover (optional) */
+    transition: background-color 0.25s;
+}
+.game-section{
+    padding-bottom: 20rem;
+    padding-top: 5rem;
+}
+
+.jump-out{
+    animation: jumpOut 1s ease both; /* Supplemental effect for user */
+
+    border: 3px solid rgb(131, 0, 254);
+    padding: 20px;
+    font-size: 42px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 32px;
+    width: 80%;
+
+    color: white;
+}
+
+/* Have the correct answer option jump out to the user */
+@keyframes jumpOut{
+    0% { transform: scale(1); }
+    25% { transform: scale(1.125); }
+    50% { transform : scale(0.875); }
+    75% { transform: scale(1.125); }
+    100% { transform: scale(1); }
+}
+
+.question-block{
+    background-image: linear-gradient(to right, rgb(132, 0, 255), rgba(39, 53, 255, 0.989), rgb(0, 68, 255), rgb(0, 132, 255));
+    border: 10px solid purple;
+    padding: 50px; 
+    width: fit-content;
+    height: fit-content;
+    color: white;
+    margin: auto;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.result-section{
+    color: white;
+}
